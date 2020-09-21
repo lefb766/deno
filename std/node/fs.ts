@@ -6,6 +6,7 @@ import { chmod, chmodSync } from "./_fs/_fs_chmod.ts";
 import { chown, chownSync } from "./_fs/_fs_chown.ts";
 import { close, closeSync } from "./_fs/_fs_close.ts";
 import * as constants from "./_fs/_fs_constants.ts";
+import { lstat, lstatSync, stat, statSync } from "./_fs/_fs_stat.ts";
 import { readFile, readFileSync } from "./_fs/_fs_readFile.ts";
 import { readlink, readlinkSync } from "./_fs/_fs_readlink.ts";
 import { exists, existsSync } from "./_fs/_fs_exists.ts";
@@ -30,12 +31,16 @@ export {
   copyFileSync,
   exists,
   existsSync,
+  lstat,
+  lstatSync,
   readFile,
   readFileSync,
   readlink,
   readlinkSync,
   mkdir,
   mkdirSync,
+  stat,
+  statSync,
   writeFile,
   writeFileSync,
   promises,
